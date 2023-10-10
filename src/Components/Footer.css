@@ -1,0 +1,17 @@
+
+footer{
+    position: relative;
+    bottom: 1;
+    left: 0;
+    width: 100%;
+    background-color: #5a988d;
+    text-align: center;  
+}
+
+#foot{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0; 
+}
