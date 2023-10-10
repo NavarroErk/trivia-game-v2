@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Host.css";
 
 import PlayerCard from "../Components/PlayerCard";
@@ -128,26 +128,25 @@ function Host() {
         <div id="createGameSettings">
           {/* <button className="gamemodeBtn">Classic</button> */}
           {/* <button className="gamemodeBtn">Fast Mode</button> */}
-            
-            <div id="gameParamsContainer">
+
+          <div id="gameParamsContainer">
             <h3 className="hostHeading">Game Parameters</h3>
-              {/* questions, points, timer */}
-              <button class="gameMode">Classic</button> 
-              {/* Less time, more points */}
-              <button class="gameMode">Aggresive</button>
-              {/* lots of questions, lots of time, little points */}
-              <button class="gameMode">Marathon</button>
-     
+            {/* questions, points, timer */}
+            <button class="gameMode">Classic</button>
+            {/* Less time, more points */}
+            <button class="gameMode">Aggresive</button>
+            {/* lots of questions, lots of time, little points */}
+            <button class="gameMode">Marathon</button>
+
             <h3 className="hostHeading">Categories</h3>
             <div id="gameCategoriesContainer">
-              
               <p>
                 {" "}
                 {userCategory.categoryName} {userCategory.categoryId}{" "}
               </p>
               {renderCategoryBtns()}
             </div>
-            </div>
+          </div>
         </div>
 
         <button id="startGameBtn">Start Game</button>
